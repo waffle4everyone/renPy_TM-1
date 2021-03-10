@@ -125,10 +125,10 @@ menu:
         menu:
             h "Do you like vanilla or fistic?"
             "I like vanilla":
-                $ flag = False
+                $ flag = True
                 h "mmm...Me too"            
             "I love fistic":
-                $ flag = True
+                $ flag = False
                 hide hori happy
                 show ice cream:
                     yalign .3
@@ -172,6 +172,12 @@ label ending:
     show hori happy:
         xcenter .4
     y "Looks spacious!"
+    if flag:
+        h "Thank you for walking me home"
+        h "Very nice of you!"
+        h "See you tommorow!"
+        y "See you tommorow as well!"
+        return
     menu:
         h "How about coming in for some coffee?"
         "Join her":
