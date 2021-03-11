@@ -27,12 +27,14 @@ image ending:
 image end:
     "bg end.png"
     
+define audio.birds = "audio/birds.mp3"
     
 label start:
     define a = Character("Aisaka", color="#FF7F50")
     define h = Character("Hori", color="#800080")
     define you = Character("You", color="FFFFFF")
     scene school at truecenter
+    play music birds
     you "Ah ..."
     you "What a wonderful morning!"
     you "It's my first day at the university... I should make new friends!"
